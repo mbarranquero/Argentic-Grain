@@ -1,11 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov  4 15:26:11 2018
-
-@author: nils
-"""
-
 import numpy as np
 import matplotlib.image as mpimg
 from math import pi, sqrt
@@ -94,14 +86,4 @@ def viewimage(im):
     os.system(commande)
     
     return
-
-im_a = scipy.misc.imread("/home/nils/Images/singe.jpeg", flatten=True, mode='RGB')
-im_a.shape
-
-im_temp_1 = np.asarray(evaluation(im_a))
-
-viewimage(im_temp_1)
-#scipy.misc.toimage(255.0*im_temp_1,cmin=0, cmax=255).save('img_out_1.png')
-#scipy.misc.toimage(255.0*im_temp_2,cmin=0, cmax=255).save('img_out_2.png')
-#viewimage(evaluation(im))
             
