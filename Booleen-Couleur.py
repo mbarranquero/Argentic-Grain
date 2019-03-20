@@ -1,11 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 10 17:04:01 2018
-
-@author: nils
-"""
-
 import numpy as np
 import matplotlib.image as mpimg
 from math import pi, sqrt
@@ -45,7 +37,6 @@ def addGrain(im):
     for i in range(N_zoom):
         for j in range(M_zoom):
             imf[i][j] = (rouge[i][j], vert[i][j], bleu[i][j])
-
     return imf
 
 def booleanModel(im, N, M):
@@ -118,10 +109,3 @@ def viewimage(im):
     os.system(commande)
     
     return
-
-im_a = scipy.misc.imread("/home/nils/Images/Brody-Lucky-resize.jpg", flatten=None, mode='RGB')
-
-im_temp_1 = np.asarray(addGrain(im_a))
-
-viewimage(im_temp_1)
-            
