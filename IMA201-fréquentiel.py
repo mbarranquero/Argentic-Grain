@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Oct  1 22:58:36 2018
-
-@author: nilsvh
-"""
-
 import numpy as np
 from numpy.fft import fft2, ifft2
 import matplotlib.image as mpimg
@@ -147,10 +139,6 @@ def normalize(im, normalize = True, MINI = 0.0, MAXI = 255.0):
         imt[imt > 1] = 1
    
     return imt
-
-im = mpimg.imread("/cal/homes/vanhaeringen/2A/damier.png")
-
-viewimage(convolGrain(im, 1, 0.1))
 
 
 
